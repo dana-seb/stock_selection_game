@@ -12,8 +12,10 @@ total_height_meters = conv_height_ft + conv_height_inches
 weight_kilo = int(input("Please Enter Your Weight in Pounds\n")) * .453592
 # print(weight_kilo)
 
-bmi = weight_kilo / (total_height_meters ** 2)
-print("\nYour BMI is: " + str(bmi) + "!")
+bmi = round(weight_kilo / (total_height_meters ** 2), 2)
+# print("\nYour BMI is: " + str(bmi) + "!")
+print(f"\nYour BMI is {bmi}!")
+
 
 if bmi < 18.5:
     print("You are underweight.")
