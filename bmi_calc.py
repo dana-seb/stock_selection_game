@@ -14,3 +14,13 @@ weight_kilo = int(input("Please Enter Your Weight in Pounds\n")) * .453592
 
 bmi = weight_kilo / (total_height_meters ** 2)
 print("\nYour BMI is: " + str(bmi) + "!")
+
+if bmi < 18.5:
+    print("You are underweight.")
+elif bmi < 25:
+    print("You are in the normal range.")
+elif bmi < 30:
+    print("You are overweight.")
+else:
+    print("You are obese.")
+       
